@@ -52,9 +52,20 @@
 #define LED3_GPIO_Port              GPIOB
 #define LED3_Pin                    GPIO_PIN_8      // YELLOW
 #define LED4_GPIO_Port              GPIOB
-#define LED4_Pin                    GPIO_PIN_5      // BLUE1
+#define LED4_Pin                    GPIO_PIN_5      // LEFT pin 3
 #define LED5_GPIO_Port              GPIOB
-#define LED5_Pin                    GPIO_PIN_4      // BLUE2
+#define LED5_Pin                    GPIO_PIN_4      // LEFT pin 2
+#define LED6_GPIO_Port              GPIOA
+#define LED6_Pin                    GPIO_PIN_15      // LEFT pin 1
+#define LED7_GPIO_Port              GPIOD
+#define LED7_Pin                    GPIO_PIN_0      // RIGHT pin 1
+#define LED8_GPIO_Port              GPIOD
+#define LED8_Pin                    GPIO_PIN_1      // RIGHT pin 2
+#define LED9_GPIO_Port              GPIOA
+#define LED9_Pin                    GPIO_PIN_1      // RIGHT pin 3
+
+
+
 
 #define LED1_SET                    (0x01)
 #define LED2_SET                    (0x02)
@@ -103,8 +114,8 @@
 /* =========================== Defines AUX =========================== */
 #define AUX1_PU_GPIO_Port           GPIOC
 #define AUX1_PU_Pin                 GPIO_PIN_15
-#define AUX2_GPIO_Port              GPIOA
-#define AUX2_Pin                    GPIO_PIN_1
+//#define AUX2_GPIO_Port              GPIOA
+//#define AUX2_Pin                    GPIO_PIN_1 //This is now RIGHT led pin 3
 #define AUX3_GPIO_Port              GPIOB
 #define AUX3_Pin                    GPIO_PIN_10
 #ifdef AUX45_USE_GPIO

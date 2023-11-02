@@ -172,12 +172,20 @@ void intro_demo_led(uint32_t tDelay)
         gpio_bit_set(LED3_GPIO_Port, LED3_Pin);
         gpio_bit_set(LED4_GPIO_Port, LED4_Pin);
         gpio_bit_set(LED5_GPIO_Port, LED5_Pin);
+        gpio_bit_set(LED6_GPIO_Port, LED6_Pin);
+        gpio_bit_set(LED7_GPIO_Port, LED7_Pin);
+        gpio_bit_set(LED8_GPIO_Port, LED8_Pin);
+        gpio_bit_set(LED9_GPIO_Port, LED9_Pin);
         delay_1ms(tDelay);
         gpio_bit_reset(LED1_GPIO_Port, LED1_Pin);
         gpio_bit_reset(LED2_GPIO_Port, LED2_Pin);
         gpio_bit_reset(LED3_GPIO_Port, LED3_Pin);
         gpio_bit_reset(LED4_GPIO_Port, LED4_Pin);
         gpio_bit_reset(LED5_GPIO_Port, LED5_Pin);
+        gpio_bit_reset(LED6_GPIO_Port, LED6_Pin);
+        gpio_bit_reset(LED7_GPIO_Port, LED7_Pin);
+        gpio_bit_reset(LED8_GPIO_Port, LED8_Pin);
+        gpio_bit_reset(LED9_GPIO_Port, LED9_Pin);
     }
 }
 
@@ -383,9 +391,16 @@ void handle_leds(void) {
             if (Feedback.cmdLed & LED1_SET) { gpio_bit_set(LED1_GPIO_Port, LED1_Pin); } else { gpio_bit_reset(LED1_GPIO_Port, LED1_Pin); }
             if (Feedback.cmdLed & LED2_SET) { gpio_bit_set(LED2_GPIO_Port, LED2_Pin); } else { gpio_bit_reset(LED2_GPIO_Port, LED2_Pin); }
             if (Feedback.cmdLed & LED3_SET) { gpio_bit_set(LED3_GPIO_Port, LED3_Pin); } else { gpio_bit_reset(LED3_GPIO_Port, LED3_Pin); }
-            if (Feedback.cmdLed & LED4_SET) { gpio_bit_set(LED4_GPIO_Port, LED4_Pin); } else { gpio_bit_reset(LED4_GPIO_Port, LED4_Pin); }
-            if (Feedback.cmdLed & LED5_SET) { gpio_bit_set(LED5_GPIO_Port, LED5_Pin); } else { gpio_bit_reset(LED5_GPIO_Port, LED5_Pin); }
-            if (Feedback.cmdLed & LED4_SET) { gpio_bit_set(AUX3_GPIO_Port, AUX3_Pin); } else { gpio_bit_reset(AUX3_GPIO_Port, AUX3_Pin); }
+            //if (Feedback.cmdLed & LED4_SET) { gpio_bit_set(LED4_GPIO_Port, LED4_Pin); } else { gpio_bit_reset(LED4_GPIO_Port, LED4_Pin); }
+            //if (Feedback.cmdLed & LED5_SET) { gpio_bit_set(LED5_GPIO_Port, LED5_Pin); } else { gpio_bit_reset(LED5_GPIO_Port, LED5_Pin); }
+            //if (Feedback.cmdLed & LED4_SET) { gpio_bit_set(AUX3_GPIO_Port, AUX3_Pin); } else { gpio_bit_reset(AUX3_GPIO_Port, AUX3_Pin); }
+            gpio_bit_set(LED4_GPIO_Port, LED4_Pin);
+            gpio_bit_set(LED5_GPIO_Port, LED5_Pin);
+            gpio_bit_set(LED6_GPIO_Port, LED6_Pin);
+            gpio_bit_set(LED7_GPIO_Port, LED7_Pin);
+            gpio_bit_set(LED8_GPIO_Port, LED8_Pin);
+            gpio_bit_set(LED9_GPIO_Port, LED9_Pin);
+            gpio_bit_set(AUX3_GPIO_Port,AUX3_Pin);
         }
     #endif
 }

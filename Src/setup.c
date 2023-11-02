@@ -71,11 +71,19 @@ void gpio_config(void) {
     gpio_mode_set(LED3_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED3_Pin);
     gpio_mode_set(LED4_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED4_Pin);
     gpio_mode_set(LED5_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED5_Pin);
+    gpio_mode_set(LED6_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED6_Pin);
+    gpio_mode_set(LED7_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED7_Pin);
+    gpio_mode_set(LED8_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED8_Pin);
+    gpio_mode_set(LED9_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, LED9_Pin);
     gpio_output_options_set(LED1_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED1_Pin);
     gpio_output_options_set(LED2_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED2_Pin);
     gpio_output_options_set(LED3_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED3_Pin);
     gpio_output_options_set(LED4_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED4_Pin);
     gpio_output_options_set(LED5_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED5_Pin);
+    gpio_output_options_set(LED6_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED6_Pin);
+    gpio_output_options_set(LED7_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED7_Pin);
+    gpio_output_options_set(LED8_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED8_Pin);
+    gpio_output_options_set(LED9_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, LED9_Pin);
 
     /* reset GPIO pin */
     gpio_bit_reset(LED1_GPIO_Port, LED1_Pin);
@@ -83,6 +91,10 @@ void gpio_config(void) {
     gpio_bit_reset(LED3_GPIO_Port, LED3_Pin);
     gpio_bit_reset(LED4_GPIO_Port, LED4_Pin);
     gpio_bit_reset(LED5_GPIO_Port, LED5_Pin);
+    gpio_bit_reset(LED6_GPIO_Port, LED6_Pin);
+    gpio_bit_reset(LED7_GPIO_Port, LED7_Pin);
+    gpio_bit_reset(LED8_GPIO_Port, LED8_Pin);
+    gpio_bit_reset(LED9_GPIO_Port, LED9_Pin);
 
 
     /* =========================== Configure Sensors GPIOs =========================== */
@@ -137,13 +149,13 @@ void gpio_config(void) {
     gpio_mode_set(AUX1_PU_GPIO_Port, GPIO_MODE_INPUT, GPIO_PUPD_NONE, AUX1_PU_Pin);
 
     /* configure GPIO port - outputs */
-    gpio_mode_set(AUX2_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AUX2_Pin);
+    //gpio_mode_set(AUX2_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AUX2_Pin);
     gpio_mode_set(AUX3_GPIO_Port, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AUX3_Pin);
-    gpio_output_options_set(AUX2_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, AUX2_Pin);
+    //gpio_output_options_set(AUX2_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, AUX2_Pin);
     gpio_output_options_set(AUX3_GPIO_Port, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, AUX3_Pin);
 
     /* reset GPIO pin */
-    gpio_bit_reset(AUX2_GPIO_Port, AUX2_Pin);
+    //gpio_bit_reset(AUX2_GPIO_Port, AUX2_Pin);
     gpio_bit_reset(AUX3_GPIO_Port, AUX3_Pin);
 
     #ifdef AUX45_USE_GPIO

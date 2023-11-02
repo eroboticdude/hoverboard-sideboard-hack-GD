@@ -28,7 +28,7 @@
 // or use VARIANT environment variable for example like "make -e VARIANT=VARIANT_DEBUG". Select only one at a time.
 #if !defined(PLATFORMIO)
   // #define VARIANT_DEBUG                    // Variant for debugging and checking the capabilities of the side-board
-  // #define VARIANT_HOVERCAR                 // Variant for using the side-boards connected to the Hoverboard mainboard
+   #define VARIANT_HOVERCAR                 // Variant for using the side-boards connected to the Hoverboard mainboard
   // #define VARIANT_HOVERBOARD               // Variant for using the side-boards connected to the Hoverboard mainboard
 #endif
 
@@ -42,7 +42,7 @@
 /* =============================================================================================== */
 
 /* ==================================== SETTINGS MPU-6050 ==================================== */
-#define MPU_SENSOR_ENABLE                     // [-] Enable flag for MPU-6050 sensor. Comment-out this flag to Disable the MPU sensor and reduce code size.
+//#define MPU_SENSOR_ENABLE                     // [-] Enable flag for MPU-6050 sensor. Comment-out this flag to Disable the MPU sensor and reduce code size.
 #define MPU_DMP_ENABLE                        // [-] Enable flag for MPU-6050 DMP (Digital Motion Processing) functionality.
 #define MPU_DEFAULT_HZ            20          // [Hz] Default MPU frequecy: must be between 1Hz and 200Hz.
 #define TEMP_READ_MS              500         // [ms] Temperature read time interval
@@ -79,7 +79,7 @@
 #ifdef VARIANT_DEBUG
   #define SERIAL_DEBUG                        // [-] Define for Serial Debug via the serial port
   #define SERIAL_AUX_RX                       // [-] Use AUX4, AUX5 as USART port
-  // #define SERIAL_AUX_TX                       // [-] Use AUX4, AUX5 as USART port
+   #define SERIAL_AUX_TX                       // [-] Use AUX4, AUX5 as USART port
 
   #define CONTROL_IBUS
   #define IBUS_NUM_CHANNELS   14              // Total number of IBUS channels to receive, even if they are not used.
@@ -90,12 +90,12 @@
 
 /* ==================================== VARIANT HOVERCAR ==================================== */
 #ifdef VARIANT_HOVERCAR
-  #define SERIAL_CONTROL                      // [-] Define for Serial Control via the serial port
+  //#define SERIAL_CONTROL                      // [-] Define for Serial Control via the serial port
   #define SERIAL_FEEDBACK                     // [-] Define for Serial Feedback via the serial port
-  #define SERIAL_AUX_RX                       // [-] Use AUX4, AUX5 as USART port
-  // #define SERIAL_AUX_TX                       // [-] Use AUX4, AUX5 as USART port
+  //#define SERIAL_AUX_RX                       // [-] Use AUX4, AUX5 as USART port
+  //#define SERIAL_AUX_TX                       // [-] Use AUX4, AUX5 as USART port
 
-  #define CONTROL_IBUS
+  //#define CONTROL_IBUS
   #define IBUS_NUM_CHANNELS   14              // Total number of IBUS channels to receive, even if they are not used.
   #define IBUS_LENGTH         0x20
   #define IBUS_COMMAND        0x40
