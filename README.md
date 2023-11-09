@@ -1,5 +1,11 @@
 # hoverboard-sideboard-hack-GD
 
+THIS FIRMWARE IS MODIFIED FOR THE 36v VARIANT OF THE SIDEBOARD: These boards have a modified pinout and more LED Pins.
+I also have a WIP feature for displaying diagnostics on an I2C OLED panel. It is not currently functional.
+
+![sideboard](/docs/pictures/sideboard2_pinout.png)
+
+
 [![Build status](https://github.com/EFeru/hoverboard-sideboard-hack-GD/actions/workflows/build_on_commit.yml/badge.svg)](https://github.com/EFeru/hoverboard-sideboard-hack-GD/actions/workflows/build_on_commit.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=CU2SWN2XV9SCY&currency_code=EUR&source=url)
