@@ -3,7 +3,7 @@
 THIS FIRMWARE IS MODIFIED FOR THE 36v VARIANT OF THE SIDEBOARD: These boards have a modified pinout and more LED Pins.
 I also have a WIP feature for displaying diagnostics on an I2C OLED panel. It is not currently functional.
 
-![sideboard](/docs/pictures/sideboard2_pinout.png)
+![sideboard](/docs/pictures/sideboard_pinout2.png)
 
 
 [![Build status](https://github.com/EFeru/hoverboard-sideboard-hack-GD/actions/workflows/build_on_commit.yml/badge.svg)](https://github.com/EFeru/hoverboard-sideboard-hack-GD/actions/workflows/build_on_commit.yml)
